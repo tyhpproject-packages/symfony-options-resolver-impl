@@ -1,0 +1,41 @@
+{
+    "name": "tyhpdef/symfony-options-resolver-impl",
+    "description": "Implementation package for tyhpdef/symfony-options-resolver. Require tyhpdef/symfony-options-resolver, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "7.4.8.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/symfony-options-resolver"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/options-resolver": "7.4.8"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev"
+    }
+}
